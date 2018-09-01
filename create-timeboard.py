@@ -35,7 +35,7 @@ graphs = [{
         "events": [],
         "requests": [
     {
-      "q": "avg:my_metric{*}",
+      "q": "avg:my_metric{host:precise64}",
       "type": "line",
       "style": {
         "palette": "dog_classic",
@@ -56,7 +56,7 @@ graphs = [{
         "events": [],
         "requests": [
     {
-      "q": "avg:my_metric{*}",
+      "q": "avg:my_metric{*}.rollup(sum, 3600)",
       "type": "line",
       "style": {
         "palette": "dog_classic",

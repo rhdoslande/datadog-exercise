@@ -14,7 +14,7 @@ graphs = [{
         "events": [],
         "requests": [
     {
-      "q": "anomalies(avg:postgresql.bgwriter.buffers_alloc{*}.as_count(), 'basic', 1)",
+      "q": "anomalies(avg:postgresql.max_connections{host:precise64}.as_count(), 'basic', 1)",
       "type": "line",
       "style": {
         "palette": "dog_classic",
